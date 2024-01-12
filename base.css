@@ -1,0 +1,157 @@
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+   
+}
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 15%;
+    background-color: rgb(166, 248, 228);
+    padding: 60px 20px 0px;
+    color: black;
+}
+.header {
+    background-color: rgb(5, 108, 108);
+    width: 100%;
+    min-height: 150px;
+    position: relative;
+   
+}
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+}
+.footer {
+    background-color: rgb(192, 191, 194);
+    min-height: 150px;
+}
+
+/*MINHAS MUDANÇAS EM CSS DO PROJETO*/
+
+/* Remove o ponto da lista não ordenada */
+
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: rgb(68, 67, 67);
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    
+  }
+  li {
+    margin-bottom: 10px;
+    transition: background-color 0.5s;
+    margin-left: 3px;
+    margin-bottom: 60px;
+  }
+  li a {
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+    position: relative; 
+  }
+
+  li a::before {
+    content: ''; /* Conteúdo vazio, usado para criar o pseudo-elemento */
+    position: absolute; /* Posiciona o pseudo-elemento absolutamente em relação ao link */
+    top: 0;
+    left: -7px; /* Ajuste o valor conforme necessário para a largura desejada da borda à esquerda */
+    height: 100%;
+    width: 5px; /* Ajuste a largura conforme necessário */
+    background-color: transparent; /* Cor da borda antes do hover */
+    transition: background-color 0.5s; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+ 
+  li:hover a::before{
+    background-color: rgb(243, 209, 134);
+
+  }
+
+  .header-image {
+    background-image: url('Imagens/teste2.jpg');
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  fieldset {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(166, 248, 228);
+  }
+
+  .hiperlink:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+  }
+
+  .hiperlink {
+    color: rgb(166, 248, 228);
+  }
+
+  h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.contact-info, .social-media, .location {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+video {
+  width: 400px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  background-color: #f44336;
+}
